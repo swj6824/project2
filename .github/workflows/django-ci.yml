@@ -27,4 +27,4 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -
+          docker build --rm django-test-image python manage.py test
